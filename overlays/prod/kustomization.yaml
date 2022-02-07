@@ -2,8 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: sourcegraph
 resources:
-  - git::git@github.com/Deichindianer/deploy-sourcegraph/base?ref=v3.36.3
+  - git::git@github.com:Deichindianer/deploy-sourcegraph/base?ref=native-kustomize
 components:
-  - git::git@github.com/Deichindianer/deploy-sourcegraph/components/non-privileged?ref=v3.36.3
-  - git::git@github.com/Deichindianer/deploy-sourcegraph/components/non-privileged-create-cluster?ref=v3.36.3
+  - git::git@github.com:Deichindianer/deploy-sourcegraph/components/non-privileged?ref=native-kustomize
+  - git::git@github.com:Deichindianer/deploy-sourcegraph/components/non-privileged-create-cluster?ref=native-kustomize
 
